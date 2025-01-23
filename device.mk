@@ -18,9 +18,8 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
-# Camera
-PRODUCT_PACKAGES += \
-    OnePlusCameraHelper
+#Ship OnePlus Cam
+$(call inherit-product, vendor/Camera/hotdog/config.mk)
 
 # Device init scripts
 PRODUCT_PACKAGES += \
